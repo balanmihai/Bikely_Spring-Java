@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+<!--  <link rel="preconnect" th:href="https://fonts.gstatic.com">-->
+<!--  <link th:href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+  <title>Contact</title>
+</head>
+<body>
+  
+  <div class="shop">
+
+    <div class="landing-navbar">
+
+      <div class="landing-navbar-logo">
+        <a th:href="@{'/'}">Bikely</a>
+      </div>
+
+      <ul class="landing-navbar-menu">
+        <li><a th:href="@{'/login'}">Login</a></li>
+        <li><a th:href="@{'/rules'}">Rules</a>
+        <li><a class="btn" th:href="@{'/shop'}">Shop</a>
+        <li><a th:href="@{'/contact'}">Contact</a>
+        <li><a th:href="@{'/logout'}">Logout</a>
+      </ul>
+  </div>
+
+    <div class="shop-container">
+      <h1>Bike Shop</h1>
+      <div class="shop-products">
+        <div class="product-1">
+          <img th:src="@{/img/bike2.png}" alt="">
+          <h1>Title: Colnago XR10</h1>
+          <h2>Price: 1000$</h2>
+          <button> <a th:href="@{'/cart'}">Add to Cart</a></button>
+        </div>
+        <div class="product-2">
+          <img th:src="@{/img/bike3.png}" alt="">
+          <h1>Title: Colnago S50</h1>
+          <h2>Price: 700$</h2>
+          <button> <a th:href="@{'/cart'}">Add to Cart</a></button>
+        </div>
+        <div class="product-3">
+          <img th:src="@{/img/bike4.png}" alt="">
+          <h1>Title: Colnago GH8</h1>
+          <h2>Price: 1500$</h2>
+          <button> <a th:href="@{'/cart'}">Add to Cart</a></button>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>

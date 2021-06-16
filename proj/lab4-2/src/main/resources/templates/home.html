@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+  <title>Contact</title>
+</head>
+<body>
+
+ 
+<div class="landing" id="landing">
+
+  <div class="landing-navbar">
+
+    <div class="landing-navbar-logo">
+      <a th:href="@{'/'}">Bikely</a>
+    </div>
+
+    <ul class="landing-navbar-menu">
+      <li><a th:href="@{'/login'}">Login</a></li>
+      <li><a th:href="@{'/rules'}">Rules</a>
+      <li><a th:href="@{'/shop'}">Shop</a>
+      <li><a th:href="@{'/contact'}">Contact</a>
+      <li><a th:href="@{'/logout'}">Logout</a>
+    </ul>
+  </div>
+
+  <div class="landing-center-text">
+    <h2>Tired of looking for the perfect bike?</h2>
+    <h1>You can find yours here!</h1>
+    <p>Try Bikely in order to buy the bike that best fits your cycling style.</p>
+  </div>
+
+  <div class="landing-img">
+    <img th:src="@{/img/bike.png}" alt="">
+  </div>
+
+  <div class="landing-buttons">
+    <div class="landing-buttons-shop">
+      <button><a th:href="@{'/shop'}">SHOP</a></button>
+    </div>
+    <div class="landing-buttons-rules">
+      <button><a th:href="@{'/rules'}">Cycling Rules</a></button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

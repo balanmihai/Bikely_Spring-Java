@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{../styling/style.css}" rel="stylesheet" />
+<!--  <link rel="preconnect" th:href="https://fonts.gstatic.com">-->
+<!--  <link th:href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+  <title>Contact</title>
+</head>
+<body>
+  
+  <div class="rules">
+
+    <div class="landing-navbar">
+
+      <div class="landing-navbar-logo">
+        <a th:href="@{'/'}">Bikely</a>
+      </div>
+
+      <ul class="landing-navbar-menu">
+        <li><a th:href="@{'/login'}">Login</a></li>
+        <li><a class="btn" th:href="@{'/rules'}">Rules</a>
+        <li><a th:href="@{'/shop'}">Shop</a>
+        <li><a th:href="@{'/contact'}">Contact</a>
+        <li><a th:href="@{'/logout'}">Logout</a>
+      </ul>
+  </div>
+
+  <div class="rules-container">
+    <h1>Cycling Rules</h1>
+    <div class="rules-text">
+      <p>RULE: YIELD TO PEDESTRIANS OR OTHER VEHICLES ALREADY ON THE ROADWAY
+When approaching vehicles or other bicycles that are stopped or traveling at slower speed ahead of you, you must yield until it is safe to pass. Like all other vehicles on the road, cyclists on bikes are required to yield to pedestrians.
+        
+RULE: RIDE IN THE SAME DIRECTION AS THE FLOW OF TRAFFIC
+In almost all instances, cyclists are required to follow the same rules as vehicles. When riding on the road, bicycles are required to travel in the same direction as the flow of traffic. For those of us living in the United States, this means always riding on the right side as well as utilizing the right side of the lane as much as possible unless it is unsafe to do so.
+
+RULE: DON’T RIDE ON THE SIDEWALK
+While this is a law in most states, it’s a good idea to follow this rule regardless of where you live. When you ride a bike on the sidewalk, it can create a dangerous situation for those on foot while also making you less visible to turning vehicles on the road. In fact, a bicycle-car accident is more likely to occur when you ride on the sidewalk as opposed to operating your bike on the road.
+        
+RULE: OBEY ALL TRAFFIC SIGNALS AND SIGNS
+Rolling through stop signs, proceeding through a red light or entering a crosswalk when pedestrians are present are all traffic violations whether you’re in a car or on a bike. To be safe and follow the rules of the road, you should always obey all traffic signals and other signs on the roadway just as you would when operating any other vehicle.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

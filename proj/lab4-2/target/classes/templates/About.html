@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+    <title>About Us</title>
+</head>
+<body>
+
+
+<div class="contact">
+
+    <div class="landing-navbar">
+
+        <div class="landing-navbar-logo">
+            <a th:href="@{'/'}">Bikely</a>
+        </div>
+
+        <ul class="landing-navbar-menu">
+            <li><a th:href="@{'/login'}">Login</a></li>
+            <li><a th:href="@{'/rules'}">Rules</a>
+            <li><a th:href="@{'/shop'}">Shop</a>
+            <li><a th:href="@{'/contact'}">Contact</a>
+            <li><a th:href="@{'/logout'}">Logout</a>
+
+        </ul>
+    </div>
+
+    <div class="contact-center">
+        <h1>Contact</h1>
+        <p>Location: Calea Dorobanti, number 14
+            Telephone: 0731 345 353
+            Email: contact@bikely.io
+        </p>
+        <img th:src="@{/img/location.png}" alt="">
+    </div>
+
+
+</div>
+
+</body>
+</html>
